@@ -9,9 +9,8 @@
     "preview": "vite preview",
     "lint": "eslint src",
     "fix": "eslint src --fix",
-    "lint:style": "stylelint src/**/*.{css,scss,vue} --cache --fix",
-    "prepare": "husky install",
-    "commitlint": "commitlint --config commitlint.config.cjs -e -V",
+    "format": "prettier --write \"./**/*.{html,vue,ts,js,json,md}\"",
+    "lint:eslint": "eslint src/**/*.{ts,vue} --cache --fix",
     "preinstall": "node ./scripts/preinstall.js"
   },
   "dependencies": {

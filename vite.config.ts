@@ -35,5 +35,10 @@ export default defineConfig(({ command }) => {
         },
       },
     },
+    server: {
+      proxy: {
+        "/class": "https://m-campus.seewo.com",
+      },
+    },
   }
 })
